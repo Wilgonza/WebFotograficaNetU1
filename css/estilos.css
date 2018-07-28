@@ -1,0 +1,304 @@
+*
+{
+	margin:0;
+}
+
+body{
+	background: #f2f2f2;
+	color: black;
+	font-size: 1em;
+	font-family: 'Dancing Script';
+}
+
+/*#contenedor1
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+#contenedor2
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+*/
+
+header
+{
+	margin: 0 auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: left;
+	text-shadow: 2px 2px 2px #02010a;
+	background-color: #5b7989;
+	color:white;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-o-border-radius: 10px 10px 0px 0px;
+	-ms-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	animation-duration: 1s;
+	animation-name: desplaza_Arriba;
+}
+@-webkit-keyframes desplaza_Arriba {
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		 margin-top: -5%;
+	}
+	100%{
+		 margin-top: 0%;
+	}
+}
+
+nav {
+  text-align: right;
+	margin-right: 2em;
+	color: white;
+}
+a{
+  text-decoration: none;
+	color: white;
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	padding: 2%;
+	text-align: center;
+}
+
+	#columna1
+	{
+	background-color: #82c3a6;
+	width: 100%;
+	}
+
+	#columna1 img{
+	  display:block;
+	  margin:auto;
+	  width: 70%;
+	 }
+
+ #columna2, #columna3
+	{
+	background-color: #d5c75f;
+	width: 50%;
+	height: 50%;
+	/*border-color: black;
+	border-style: solid;*/
+	}
+
+  #columna2 img{
+	  display:block;
+	  margin:auto;
+	  width: 50%;
+		transition-property: border;
+    transition-duration: 0.5s;
+	 }
+
+	 #columna2 img:hover{
+	 	border: solid 0.1px black;
+		transform: rotate(10deg);
+	 }
+
+	@-webkit-keyframes columna3-animacion {
+	 0% {
+	 position: relative;
+	 left: 5px;
+	 bottom:  5px;
+	 }
+	 50% {
+	 position: relative;
+	 left: 20px;
+	 }
+	 100% {
+	 position: relative;
+	 left: 5px;
+	 bottom: 5px;
+	 }
+	 }
+
+
+
+	 #columna3 img{
+ 	  display:block;
+ 	  margin:auto;
+ 	  width: 40.7%;
+		transition-property: border;
+		transition-duration: 0.5s;
+ 	 }
+
+	 #columna3 img:hover{
+	 transition-property: border;
+	 transition-duration: 0.5s;
+	 animation-name: columna3-animacion;
+	 animation-duration: 2s;
+	 -webkit-animation-delay: 1s; /*Safari google*/
+	 -moz-animation-delay: 1s;    /*mozilla*/
+	 -o-animation-delay: 1s;      /*opera*/
+	 -ms-animation-delay: 1s;     /*Internet explorer*/
+	 -khtml-animation-delay: 1s;  /*linux*/
+	 animation-delay: 1s;
+	 border: solid 1px black;
+	}
+
+ footer{
+	 height: 120px;
+	 color: black;
+ }
+
+#columna4, #columna5,
+#columna6, #columna7 {
+	 background-color:  #C6d5c5;
+	 width: 25%;
+	 -moz-border-radius: 0px 0px 10px 10px;
+   -o-border-radius: 0px 0px 10px 10px;
+   -ms-border-radius: 0px 0px 10px 10px;
+   -webkit-border-radius: 0px 0px 10px 10px;
+   border-radius: 0px 0px 10px 10px;
+	}
+	#columna6 img{
+		display:block;
+		margin:auto;
+		width: 17px;
+	}
+#redes1, #redes2, #redes3 {
+	color: black;
+}
+
+@media screen and (max-width: 960px){
+
+	#contenedor1, #contenedor2
+	{
+		width: 100%;
+		/*margin: 0 auto;*/
+	}
+
+	#columna1
+	{
+	background-color: #82c3a6;
+	width: 100%;
+	}
+
+	#columna2, #columna3
+	 {
+	 background-color: #d5c75f;
+	 width: 50%;
+	 border-color: black;
+	 border-style: solid;
+	 }
+
+	 #columna2 img{
+		display:block;
+		margin:auto;
+		width: 50%;
+	 }
+
+	 #columna3 img{
+			display:block;
+			margin:auto;
+			width: 40.7%;
+		 }
+		 #columna6 img{
+		 	display:block;
+		 	margin:auto;
+		 	width: 17px;
+		 }
+
+}
+
+@media screen and (max-width: 640px){
+
+	#contenedor1, #contenedor2
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#columna1{
+   width: 100%;
+}
+
+#columna2, #columna3{
+ width: 50%;
+}
+
+#columna2 img{
+ display:block;
+ margin:auto;
+ width: 100%;
+}
+
+#columna3 img{
+	 display:block;
+	 margin:auto;
+	 width: 81.5%;
+	}
+
+#columna4, #columna5,
+#columna6, #columna7
+{
+	width: 25%;
+}
+#columna6 img{
+	display:block;
+	margin:auto;
+	width: 17px;
+}
+}
+
+@media screen and (max-width: 480px){
+
+	#contenedor1, #contenedor2
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#columna1, #columna2, #columna3,
+	#columna4, #columna5, #columna6,
+	#columna7
+	{
+	width: 100%;
+	}
+
+	#columna2, #columna3 img{
+	  display:block;
+	  margin:auto;
+	  width: 100%;
+	 }
+	 #columna6 img{
+	 	display:block;
+	 	margin:auto;
+	 	width: 17px;
+	 }
+
+	header
+	{
+		margin: 0 auto;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		text-align: center;
+		background-color: #5b7989;
+		color:white;
+		-moz-border-radius: 10px 10px 0px 0px;
+		-o-border-radius: 10px 10px 0px 0px;
+		-ms-border-radius: 10px 10px 0px 0px;
+		-webkit-border-radius: 10px 10px 0px 0px;
+		border-radius: 10px 10px 0px 0px;
+	  width:100%;
+		animation-duration: 1s;
+		animation-name: desplaza_Arriba;
+	}
+
+	nav{
+	  text-align: center;
+		margin-right: 2em;
+	}
+	a{
+		color: white;
+	}
+
+}
